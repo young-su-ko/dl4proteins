@@ -7,4 +7,5 @@
 Here we report that general protein language models can efficiently evolve human antibodies by suggesting mutations that are evolutionarily plausible
 ### Ideas
 ESM2 can be used to generate "realistic" sequence for augmentation purposes? 
+
 [Github link](https://github.com/brianhie/efficient-evolution)
