@@ -22,6 +22,12 @@ Denoising diffusion for protein generation:
 Denoising diffusion framework, given datapoint X0, the forward diffusion adds noise to form corrupted samples Xt, getting noisier as it moves forward. Markovian process, so each step of adding noise depends on the immediately previous step, not the entire history. Gaussian is an easy to sample prior. To generate new data, the NN learns to approximate the true denoising process by minimizing the variational upper bound of NLL. 
 
 AlignedProtein Mixer: 
-Process proteins from a family of aligned proteins. (**Idea**: train PPI model using clusters, with apmixer?) 
+Process proteins from a family of aligned proteins. (**Idea**: train PPI model using clusters, with apmixer?) We can represent antibodies as a fixed length sequence. **Aligned sequences provide more allow model to learn the specific role of that residue.** Other models such as 1D CNN or transformer can be used in place of the MLP. 
+
+Physics-informed Residue Reps by Projection:
+Atoms in a protein abide by physical constraints. In theory a NN can learn these constraints with enough data. But in low data regime, it can be better to constrain model. Prev. work represent proteins in terms of rotation and translation of rigid frams. Operating in angle space adds complexity. Instead, use non-parametric projection layer. The model and noising process allow atoms to move freely, but projection layer corrects their positions to fit constraints.
+
+Experiments:
+Evaluate ability to design antibodies. Quality of generated sequences is measured in terms of naturalness (inverse perplexity of AntiBERTy), closeness to training antibody, and stability estimated by IgFold. 
 
 </details>
