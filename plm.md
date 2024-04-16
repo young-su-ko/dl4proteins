@@ -79,7 +79,7 @@ Domains are functional and structural units of proteins that govern various biol
 [Github link](https://github.com/kiharalab/Domain-PFP?tab=readme-ov-file)
 </details>
 
-## 7. [Aggregating Residue-Level Protein Language Model Embeddings with Optimal Transport](https://www.biorxiv.org/content/10.1101/2024.01.29.577794v1.abstract)
+## 8. [Aggregating Residue-Level Protein Language Model Embeddings with Optimal Transport](https://www.biorxiv.org/content/10.1101/2024.01.29.577794v1.abstract)
 <details>
 <summary>Summary</summary>
 
